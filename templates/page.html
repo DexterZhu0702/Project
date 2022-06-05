@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WHAT'S THIS BIRD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+ <form method="POST" action="" enctype="multipart/form-data">
+    <div id="head">
+        <h1>WHAT'S THIS BIRD</h1>
+        <div id="upload">
+            <p id="file">
+            <input type="file" name="file" accept="audio/*">
+             </p>
+            <p id="submit">
+                <input type="submit" value="Upload">
+            </p>
+
+        </div>
+
+        <p id="string">
+            {{ string }}
+        </p>
+    </div>
+     </form>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: grid;
+}
+#head {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%;
+    text-align: center;
+    }
+
+#upload {
+    display: inline;
+    }
+
+h1 {
+    font-size: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    color: tomato;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+#string {
+     font-size: 24px;
+     color: white;
+     margin-top: 10px;
+     font-family: 'Bebas Neue', cursive;
+}
+
+#submit input{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    margin-top: 15px;
+    background:  tomato;
+    color: white;
+    filter: 'alpha(opacity=0)';
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    }
+
+#submit:hover{
+     opacity: 0.8;
+}
+
+#file input{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    filter: 'alpha(opacity=0)';
+    background: white;
+    width: 250px;
+    height: 30px;
+    border: 0;
+    line-height: 30px;
+    overflow: hidden;
+    }
+</style>
+
+<script>
+</script>
+</html>
